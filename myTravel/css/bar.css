@@ -1,0 +1,34 @@
+.servicios{
+    height: 500px; 
+    width: 100%;
+    display: flex;    
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap:wrap;
+
+}
+
+.item-servicios{
+    width: 200px;
+    max-height: 300px;    
+}
+
+.degradado-img{
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)) !important;     
+}
+
+.contenedor-imagen {
+    position: relative;
+}
+  
+.contenedor-imagen::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px; 
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5));
+    pointer-events: none;
+}
+  
